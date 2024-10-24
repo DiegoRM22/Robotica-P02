@@ -17,6 +17,7 @@ from mpl_toolkits.mplot3d import Axes3D
 # ******************************************************************************
 # Declaración de funciones
 
+
 def ramal(I, prev = [], base = 0):
   # Convierte el robot a una secuencia de puntos para representar
   O = []
@@ -125,4 +126,9 @@ o30 = np.dot(T03, o33).tolist()
 # Mostrar resultado de la cinemática directa
 muestra_origenes([o00,o10,o20,o30])
 muestra_robot   ([o00,o10,o20,o30])
+
+# Tener en cuenta para el ejercicio 3.
+# muestra_origenes([o00, o10, o20, o30, o40[[o510], [o520]]], oEF0)
+# muestra_robot([o00, o10, o20, o30, o40, [[o510], [o520]]], oEF0)
+
 input()
